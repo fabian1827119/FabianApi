@@ -2,6 +2,13 @@
 
 Es una api donde se realiza lo siguiente:<br>
 <br>
+
+<ul>
+<li>Registro de usuarios.</li>
+<li>Login de usuarios</li>
+</ul>
+
+
 *** Autenticacion por jwt ***<br>
 -> Registro de usuarios.<br>
 -> Login de usuarios.<br>
