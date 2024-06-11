@@ -6,14 +6,15 @@ Es una api donde se realiza lo siguiente:
 <li>Registro de usuarios.</li>
 <li>Login de usuarios</li>
 </ul>
-<hr>
 
-*** Usuarios ***<br>
--> Se obtiene usuario por id.<br>
--> Se obtienen todos los usuarios.<br>
--> Actualiza usuario por id.<br>
--> Devuelve un mensage si estas autenticado por jwt.<br>
-<br>
+<h4>Usuarios</h4> 
+<ul>
+  <li>Se obtiene usuario por id</li>
+  <li>Se obtienen todos los usuarios.</li>
+  <li>Actualiza usuario por id.</li>
+  <li>Devuelve un mensage si estas autenticado por jwt.</li>
+</ul>
+
 *** Pokemon ***<br>
 -> Obtiene los datos de un pokemon por nombre.<br>
 -> Obtiene mensajes de post por id.<br>
