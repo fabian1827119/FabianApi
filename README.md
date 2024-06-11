@@ -36,6 +36,10 @@ Es una api donde se realiza lo siguiente:
   <li>Pruebe API Rest usando Postman u otra aplicación en <code>http://localhost:8085</code></li>
 </ul>
 
+# Colección Postman
+Se agrega una coleccion de Postman con todas las peticiones.
+* Navegue al siguiente directorio <code> src\main\resources\templates\ColeccionPostman </code>
+
 
 
 
