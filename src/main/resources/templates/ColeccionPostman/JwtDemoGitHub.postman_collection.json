@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "863520c5-34d2-48e0-b5b3-ec393a15e563",
+		"name": "JwtDemoGitHub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36132648"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"fabian@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"lastname\": \"Santillan\",\r\n    \"firstname\": \"Fabian\",\r\n    \"country\": \"Mexico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"fabian@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsImZpcnN0TmFtZSI6IkZhYmlhbiIsImxhc3ROYW1lIjoiU2FudGlsbGFuIiwic3ViIjoiZmFiaWFuQGdtYWlsLmNvbSIsImlhdCI6MTcxODA0MDQ5MCwiZXhwIjoxNzE4MDQxOTMwfQ.9x64urTn1MNbEXYW6NE1JhFf1NuLr2Np7a9hduVIFog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/v1/user/demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"demo"
+					]
+				},
+				"description": "Se necesita estar registrado o hacer login para generar el token para pasarlo en esta peticion por que si no va a deneger el acceso"
+			},
+			"response": []
+		},
+		{
+			"name": "User by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/v1/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsImZpcnN0TmFtZSI6IkZhYmlhbiIsImxhc3ROYW1lIjoiU2FudGlsbGFuIiwic3ViIjoiZmFiaWFuQGdtYWlsLmNvbSIsImlhdCI6MTcxODA0MDQ5MCwiZXhwIjoxNzE4MDQxOTMwfQ.9x64urTn1MNbEXYW6NE1JhFf1NuLr2Np7a9hduVIFog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"fabian@gmail.com\",\r\n    \"firstname\": \"Fabianwwwwww\",\r\n    \"lastname\": \"Santillan\",\r\n    \"country\": \"Mexico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/v1/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1"
+					]
+				},
+				"description": "Se necesita estar resgistrado o hacer login para obtenere el token de acceso y pasarlo en esta peticion en el apartado de autorizacion."
+			},
+			"response": []
+		},
+		{
+			"name": "All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/v1/user/allusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"allusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/pokemon/name/pikachu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"pokemon",
+						"name",
+						"pikachu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encrypt text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/Encrypt/encrypt/java",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"Encrypt",
+						"encrypt",
+						"java"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypt text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/Encrypt/decrypt/8SE5ZyJfrWS5XwAhWWtIeA==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"Encrypt",
+						"decrypt",
+						"8SE5ZyJfrWS5XwAhWWtIeA=="
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
