@@ -1,13 +1,11 @@
 # ApiJwt
-Es una api donde se realiza lo siguiente:<br>
+Es una api donde se realiza lo siguiente:
 <br>
 <h3>Autenticacion por jwt</h3> 
-<br>
 <ul>
 <li>Registro de usuarios.</li>
 <li>Login de usuarios</li>
 </ul>
-<br>
 
 *** Usuarios ***<br>
 -> Se obtiene usuario por id.<br>
