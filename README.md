@@ -28,11 +28,11 @@ Es una api donde se realiza lo siguiente:
 </ul>
 # Generar .jar e imagen docker
 <ol>
-  <li></li>
-  <li></li>
-  <li>Navegue al directorio del proyecto donde esta el archivo <code>pom.xml</code>code>:<code>cd your-repo></code></li>
-  <li></li>
-  <li></li>
+  <li>Navegue al directorio del proyecto donde esta el archivo <code>pom.xml</code>:<code>cd your-repo></li>
+  <li>Limpie y compile el proyecto con: <code>mvn clean package</code></li>
+  <li>Contruye la imagen: <code>docker build -t apijwt .</code> </li>
+  <li>Ejecuta la imagen: <code>docker run -it -p 8085:8085 apijwt</code></li>
+  <li>Pruebe API Rest usando Postman u otra aplicación en <code>http://localhost:8085</code></li>
 </ol>
 
 
