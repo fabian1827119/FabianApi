@@ -26,9 +26,10 @@ Es una api donde se realiza lo siguiente:
   <li>Encripta una cadena de texto usando el cifrado AES/CBC/PKCS5Padding implementando una llave publica y un vector de inicialización.</li>
   <li>Desencripta una cadena de texto usando el cifrado AES/CBC/PKCS5Padding implementando una llave publica y un vector de inicialización.</li>
 </ul>
+
 # Generar .jar e imagen docker
 <ul>
-  <li>Navegue al directorio del proyecto donde esta el archivo <code>pom.xml</code>:<code>cd your-repo></li>
+  <li>Navegue al directorio del proyecto donde esta el archivo <code>pom.xml</code>:<code>cd your-repo></code>.</li>
   <li>Limpie y compile el proyecto con: <code>mvn clean package</code></li>
   <li>Contruye la imagen: <code>docker build -t apijwt .</code> </li>
   <li>Ejecuta la imagen: <code>docker run -it -p 8085:8085 apijwt</code></li>
