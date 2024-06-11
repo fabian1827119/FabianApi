@@ -26,5 +26,15 @@ Es una api donde se realiza lo siguiente:
   <li>Encripta una cadena de texto usando el cifrado AES/CBC/PKCS5Padding implementando una llave publica y un vector de inicialización.</li>
   <li>Desencripta una cadena de texto usando el cifrado AES/CBC/PKCS5Padding implementando una llave publica y un vector de inicialización.</li>
 </ul>
+# Generar .jar e imagen docker
+<ol>
+  <li></li>
+  <li></li>
+  <li>Navegue al directorio del proyecto:<code>cd your-repo></code></li>
+  <li></li>
+  <li></li>
+</ol>
+
+
 
 
