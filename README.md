@@ -6,6 +6,7 @@ Es una api donde se realiza lo siguiente:
 <li>Registro de usuarios.</li>
 <li>Login de usuarios</li>
 </ul>
+<hr>
 
 *** Usuarios ***<br>
 -> Se obtiene usuario por id.<br>
