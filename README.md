@@ -30,7 +30,7 @@ Es una api donde se realiza lo siguiente:
 <ol>
   <li></li>
   <li></li>
-  <li>Navegue al directorio del proyecto:<code>cd your-repo></code></li>
+  <li>Navegue al directorio del proyecto donde esta el archivo <code>pom.xml</code>code>:<code>cd your-repo></code></li>
   <li></li>
   <li></li>
 </ol>
